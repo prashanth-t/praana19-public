@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+body {
+    background-color : #dbdad8;
+    font-size: 2em;
+    /*color: #035c96;*/
+    color: #FFF;
+    background-image: url(../img/praana19-bg-desktop.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;    
+}
+
+.ink {
+    color: #035c96;
+}
+
+.ink-secondary {
+    color: #fd7136;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo-container {
+    margin-top: 30px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.logo-container img {
+    width: 20%;
+}
+
+.content-container {
+    text-align: center;
+    font-size: 2em;
+}
+
+footer {    
+    align-self: center;    
+    font-size: .5em;
+    position: absolute;
+    bottom: 0;
+    height: 2.5rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .content-container {
+        font-size: .75em;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    body {
+        font-size: 1em;
+        background-image: url(../img/praana19-bg-mobile.jpg);
+        background-size: cover; 
+    }
+
+    .logo-container img {
+        width: 40%;
+    } 
+    
+    .content-container {
+        font-size: 2em;
+    }
+}
