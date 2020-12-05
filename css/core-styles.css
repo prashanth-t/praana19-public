@@ -20,6 +20,22 @@ body {
     background-size: cover;    
 }
 
+a:link {
+    color: #FFF;
+}
+
+a:visited {
+    color: #FFF;
+}
+
+a:hover {
+    color:#a67c52;
+}
+
+a:active {
+    color: #FFF;
+}
+
 .ink {
     color: #035c96;
 }
@@ -37,19 +53,21 @@ body {
 .logo-container {
     margin-top: 30px;
     margin-left: 10px;
-    text-align: center;
+    margin-right: 30px;
+    text-align: right;
 }
 
 .logo-container img {
-    width: 20%;
+    width: 15%;
 }
 
 .content-container {
-    text-align: center;
-    font-size: 2em;
+    text-align: left;
+    font-size: 1.5em;
+    margin-left: 35vw;
 }
 
-footer {    
+.footer {    
     align-self: center;    
     font-size: .5em;
     position: absolute;
@@ -57,9 +75,77 @@ footer {
     height: 2.5rem;
 }
 
+@media only screen and (max-width: 1366px) {
+    .content-container {
+        font-size: 1.5em;
+        margin-left: 25vw;
+    }
+
+    .logo-container {
+        padding-top: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+    }
+
+    .footer {    
+        font-size: 1em;
+        height: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .content-container {
+        font-size: 1.5em;
+        margin-left: 15vw;
+        line-height: 1.5;
+    }
+
+    .logo-container {
+        text-align: center;
+        padding-top: 50px;
+        padding-right: 0px;
+        padding-bottom: 80px;
+    }
+
+    .logo-container img {
+        width: 43%;
+    } 
+}
+
 @media only screen and (max-width: 900px) {
     .content-container {
-        font-size: .75em;
+        font-size: 0.8em;
+        margin-left: 28vw;
+    }
+}
+
+@media only screen and (max-width: 812px) {
+    body {
+        font-size: 1em;
+        background-image: url(../img/praana19-bg-mobile.jpg);
+        background-size: cover; 
+    }
+
+    .logo-container {
+        text-align: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-right: 0px;
+    }
+
+    .logo-container img {
+        width: 22%;
+    } 
+    
+    .content-container {
+        font-size: 1.2em;
+        margin-left: 30vw;
+        line-height: 1.3;
+    }
+
+    .footer {    
+        font-size: .7em;
+        height: 2.5rem;
     }
 }
 
@@ -70,11 +156,19 @@ footer {
         background-size: cover; 
     }
 
+    .logo-container {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
     .logo-container img {
         width: 40%;
     } 
     
     .content-container {
-        font-size: 2em;
+        font-size: 1.3em;
+        margin-left: 10vw;
+        line-height: 1.5;
     }
 }
